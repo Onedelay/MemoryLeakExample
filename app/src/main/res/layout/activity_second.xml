@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SecondActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_test_handler"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="20dp"
+        android:text="memory leak by Handler" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_test_asynctask"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="20dp"
+        android:text="memory leak by Asynctask" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_test_rxjava"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="20dp"
+        android:text="memory leak by RxJava" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_test_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="20dp"
+        android:text="memory leak by Timer" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_log"
+        android:layout_width="match_parent"
+        tools:text="로그찍는 곳입니다"
+        android:textSize="20sp"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@android:color/darker_gray"
+        android:padding="20dp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
