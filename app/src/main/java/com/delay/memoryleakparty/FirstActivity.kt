@@ -15,8 +15,12 @@ class FirstActivity : AppCompatActivity() {
     }
 
     private fun initializeListener() {
-        tv_hello.setOnClickListener {
+        tv_kotlin.setOnClickListener {
             startActivity(Intent(this, SecondActivity::class.java))
+        }
+
+        tv_java.setOnClickListener {
+            startActivity(Intent(this, SecondJavaActivity::class.java))
         }
     }
 

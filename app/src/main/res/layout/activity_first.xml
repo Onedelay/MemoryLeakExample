@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".FirstActivity">
 
-    <TextView
-        android:id="@+id/tv_hello"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_kotlin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Kotlin memory Leak"
+        android:layout_margin="100dp"
         android:background="@android:color/holo_blue_light"
-        android:padding="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="20dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java memory Leak"
+        android:layout_margin="100dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="20dp"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
