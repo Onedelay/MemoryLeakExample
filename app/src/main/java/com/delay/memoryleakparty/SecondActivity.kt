@@ -12,7 +12,7 @@ import kotlin.concurrent.timerTask
 class SecondActivity : AppCompatActivity() {
 
     companion object {
-        const val DELAY_TIME = 10000L
+        const val DELAY_TIME = 10000000L
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
