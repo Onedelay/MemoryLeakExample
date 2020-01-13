@@ -41,7 +41,7 @@
 
 #### Heap dump
 
-![강제 gc 이벤트가 발생후에도 사라지지 않은 액티비티 인스턴스](/Users/wonjiyeon/github/MemoryLeakExample/images/kotlin_강제GC이후_힙덤프.png)
+![강제 gc 이벤트가 발생후에도 사라지지 않은 액티비티 인스턴스](./images/kotlin_강제GC이후_힙덤프.png)
 
 `SecondActicity` 가 `destroy` 되었고, 강제 gc 이벤트를 발생시켰는데도 `Activity` 인스턴스가 여전히 살아있는 것을 알 수 있다. 
 
@@ -62,7 +62,7 @@
 
 #### Heap dump
 
-![강제 gc 이벤트가 발생후 사라진 액티비티 인스턴스](/Users/wonjiyeon/github/MemoryLeakExample/images/kotlin_처리_강제gc이후힙덤프.png)
+![강제 gc 이벤트가 발생후 사라진 액티비티 인스턴스](./images/kotlin_처리_강제gc이후힙덤프.png)
 
 위와 달리 `SecondActicity` 인스턴스가 존재하지 않는 것을 볼 수 있다. `SecondActivity${something}` 으로 되어있는 것들은 kotlin `lambda`, `SAM` 에 의해 생성된 인스턴스로, static field 로 처리하여 메모리릭이 발생하지 않을 것이다(아마도..? 사이즈도 작으니 안심해도 될 것 같다!). 이에 대한 자세한 내용은 [여기](https://meetup.toast.com/posts/186)를 참고해보면 된다.
 
